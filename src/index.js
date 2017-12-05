@@ -9,3 +9,6 @@ console.log(`Sum of matches: ${day1solution2.solution}`);
 
 const day2solution = new day2.Solution(day2.input);
 console.log(`Spreadsheet checksum: ${day2solution.solution}`);
+
+const day2solution2 = new day2.Solution2(day2.input);
+console.log(`Spreadsheet divisibles quotient sum: ${day2solution2.solution}`);

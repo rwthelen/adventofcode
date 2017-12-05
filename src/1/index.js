@@ -3,17 +3,18 @@ const input = require('./input');
 class Solution {
   constructor(input) {
     this.numbers = input.split('');
-    this.solution = 0;
-    this.solve();
+    this.solution = this.solve();
   }
 
   solve() {
-    this.numbers.forEach((number, index, arr) => {
-      let nextNumber = this.getSisterNumber(index);
-      if (number === nextNumber) {
-        this.solution = this.solution + parseInt(number);
+    return this.numbers.reduce((sum, number, index) => {
+      let next = this.getSisterNumber(index);
+      if (number === next) {
+        return sum + parseInt(number);
+      } else {
+        return sum;
       }
-    });
+    }, 0);
   }
 
   getSisterNumber(index) {
