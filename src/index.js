@@ -1,14 +1,21 @@
-const day1 = require('./1');
-const day2 = require('./2');
+const day01 = require('./day01');
+const day02 = require('./day02');
+const day03 = require('./day03');
 
-const day1solution = new day1.Solution(day1.input);
-console.log(`Sum of matches: ${day1solution.solution}`);
+console.log(`\n--- Day 1: Inverse Captcha ---`);
+const day01solution = new day01.Solution(day01.input);
+console.log(`Sum of matches: ${day01solution.solution}`);
 
-const day1solution2 = new day1.Solution2(day1.input);
-console.log(`Sum of matches: ${day1solution2.solution}`);
+const day01solution2 = new day01.Solution2(day01.input);
+console.log(`Sum of matches: ${day01solution2.solution}`);
 
-const day2solution = new day2.Solution(day2.input);
-console.log(`Spreadsheet checksum: ${day2solution.solution}`);
+console.log(`\n--- Day 2: Corruption Checksum ---`);
+const day02solution = new day02.Solution(day02.input);
+console.log(`Spreadsheet checksum: ${day02solution.solution}`);
 
-const day2solution2 = new day2.Solution2(day2.input);
-console.log(`Spreadsheet divisibles quotient sum: ${day2solution2.solution}`);
+const day02solution2 = new day02.Solution2(day02.input);
+console.log(`Spreadsheet divisibles quotient sum: ${day02solution2.solution}`);
+
+console.log(`\n--- Day 3: Spiral Memory ---`);
+const day03solution = new day03.Solution(day03.input);
+console.log(`Position of square in spiral: ${day03solution.solution}`);
