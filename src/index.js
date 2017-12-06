@@ -19,3 +19,6 @@ console.log(`Spreadsheet divisibles quotient sum: ${day02solution2.solution}`);
 console.log(`\n--- Day 3: Spiral Memory ---`);
 const day03solution = new day03.Solution(day03.input);
 console.log(`Position of square in spiral: ${day03solution.solution}`);
+
+const day03solution2 = new day03.Solution2(day03.input);
+console.log(`First value in spiral larger than input: ${day03solution2.solution}`);
