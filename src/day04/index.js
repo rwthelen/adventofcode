@@ -20,11 +20,7 @@ class Solution {
   isPhraseValid(phrase) {
     let words = phrase.split(' ');
     let sumDupes = words.reduce((sumDupes, word, index, phrase) => {
-      let remaining = phrase.filter((w, rIndex) => {
-        if (rIndex !== index) {
-          return true;
-        }
-      });
+      let remaining = phrase.filter((w, rIndex) => rIndex !== index);
       if (remaining.includes(word)) {
         return sumDupes + 1;
       } else {
@@ -39,7 +35,4 @@ class Solution {
   }
 }
 
-let solution = new Solution(input);
-console.log(solution.solution);
-
-module.exports = Solution;
+module.exports = {Solution, input};
