@@ -24,3 +24,5 @@ console.log(`First value in spiral larger than input: ${day03solution2.solution}
 console.log(`\n--- Day 4: High-Entropy Passphrases ---`);
 const day04solution = new day04.Solution(day04.input);
 console.log(`Number of valid passphrases: ${day04solution.solution}`);
+const day04solution2 = new day04.Solution2(day04.input);
+console.log(`Number of passphrases without anagrams: ${day04solution2.solution}`);
