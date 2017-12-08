@@ -3,6 +3,7 @@ const day02 = require('./day02');
 const day03 = require('./day03');
 const day04 = require('./day04');
 const day05 = require('./day05');
+const day06 = require('./day06');
 
 console.log(`\n--- Day 1: Inverse Captcha ---`);
 const day01solution = new day01.Solution(day01.input);
@@ -33,3 +34,7 @@ const day05solution = new day05.Solution(day05.input);
 console.log(`Number of jumps: ${day05solution.solution}`);
 const day05solution2 = new day05.Solution2(day05.input);
 console.log(`Number of jumps: ${day05solution2.solution}`);
+
+console.log(`\n--- Day 6: Memory Reallocation ---`);
+const day06solution = new day06.Solution(day06.input);
+console.log(`Number of redistributions: ${day06solution.solution}`);
