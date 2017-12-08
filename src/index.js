@@ -2,6 +2,7 @@ const day01 = require('./day01');
 const day02 = require('./day02');
 const day03 = require('./day03');
 const day04 = require('./day04');
+const day05 = require('./day05');
 
 console.log(`\n--- Day 1: Inverse Captcha ---`);
 const day01solution = new day01.Solution(day01.input);
@@ -26,3 +27,9 @@ const day04solution = new day04.Solution(day04.input);
 console.log(`Number of valid passphrases: ${day04solution.solution}`);
 const day04solution2 = new day04.Solution2(day04.input);
 console.log(`Number of passphrases without anagrams: ${day04solution2.solution}`);
+
+console.log(`\n--- Day 5: A Maze of Twisty Trampolines, All Alike ---`);
+const day05solution = new day05.Solution(day05.input);
+console.log(`Number of jumps: ${day05solution.solution}`);
+const day05solution2 = new day05.Solution2(day05.input);
+console.log(`Number of jumps: ${day05solution2.solution}`);
